@@ -23,6 +23,11 @@ h3 {
 	font-weight: bold;
 }
 
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 .flex {
 	display: flex;
 	align-items: center;
@@ -73,6 +78,16 @@ header ul li a:hover {
 	display: none;
 }
 
+@media only screen and (max-width: 1125px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: inline-block;
+	}
+}
+
 /* Banner */
 
 .banner {
@@ -94,6 +109,7 @@ header ul li a:hover {
 
 .banner-text {
 	align-items: flex-start;
+	max-width: 75%;
 }
 
 .banner-text h1 {
@@ -113,13 +129,13 @@ header ul li a:hover {
 /* Main information */
 
 .main-information {
-	height: 30rem;
-	margin: 2rem 1.5rem;
+	height: 34rem;
 }
 
 .left-info {
-	width: 60%;
+	width: 54%;
 	align-items: flex-start;
+	padding-left: 1.5rem;
 }
 
 .left-info .image-container {
@@ -138,10 +154,14 @@ header ul li a:hover {
 
 .left-info p {
 	margin-bottom: 2rem;
+	max-width: 75%;
 }
 
 /* Right side info */
 .right-info {
+	align-self: flex-start;
+	border-left: 1px solid rgba(222, 222, 222, 0.7);
+	padding: 1rem 0;
 	width: 26.4375rem;
 }
 
@@ -164,7 +184,7 @@ header ul li a:hover {
 
 .info-item .image-container img {
 	height: auto;
-	max-width: 100%;
+	width: 100%;
 }
 
 .info-item .flex-column {
@@ -177,6 +197,10 @@ header ul li a:hover {
 
 .info-item p {
 	margin-bottom: 1.25rem;
+}
+
+.text {
+	width: 60%;
 }
 
 /* Start learning */
@@ -201,6 +225,10 @@ header ul li a:hover {
 	height: 20rem;
 	width: 18rem;
 	margin-bottom: 1rem;
+}
+
+.topic:hover {
+	background-color: #fff;
 }
 
 .topic .image-container {
@@ -275,6 +303,7 @@ header ul li a:hover {
 
 .thesis .right-info {
 	align-items: flex-start;
+	border: none;
 }
 
 /* Footer */
