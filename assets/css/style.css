@@ -78,13 +78,17 @@ header ul li a:hover {
 	display: none;
 }
 
-@media only screen and (max-width: 1125px) {
-	.desktop {
+@media only screen and (max-width: 770px) {
+	.desktop, #brand {
 		display: none;
 	}
 
 	.mobile {
 		display: inline-block;
+	}
+
+	.mobileimg {
+		display: block;
 	}
 }
 
@@ -105,6 +109,8 @@ header ul li a:hover {
 .banner .image-container img {
 	max-height: 100%;
 	width: auto;
+
+	display: block;
 }
 
 .banner-text {
@@ -161,7 +167,7 @@ header ul li a:hover {
 .right-info {
 	align-self: flex-start;
 	border-left: 1px solid rgba(222, 222, 222, 0.7);
-	padding: 1rem 0;
+	padding: 0.5rem 0;
 	width: 26.4375rem;
 }
 
@@ -289,7 +295,7 @@ header ul li a:hover {
 }
 
 .video-container video {
-	max-height: 100%;
+	height: 100%;
 	width: auto; 
 }
 
